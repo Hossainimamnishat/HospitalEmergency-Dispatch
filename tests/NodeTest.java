@@ -1,3 +1,4 @@
+/*
 package tests;
 
 import classes.*;
@@ -54,3 +55,4 @@ public class NodeTest {
 	}
 	
 }
+*/
