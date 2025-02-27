@@ -26,7 +26,7 @@ public class AmbulanceTest {
 	@Test
 	public void getHasDoctorTest () {
 		Ambulance ambo = new Ambulance(1, 1, false);
-		assert ambo.getHasDoctor() == false;
+        if (ambo.getHasDoctor() != false) throw new AssertionError();
 	}
 	
 	@Test

@@ -3,8 +3,8 @@ package classes;
 import interfaces.I_Ambulance;
 
 public class Ambulance implements I_Ambulance {
-	private int stationNum;
-	private int vehicleNum;
+	public int stationNum;
+	public int vehicleNum;
 	private boolean hasDoctor;
 	private String id;
 	private int priority;
