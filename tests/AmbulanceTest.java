@@ -7,7 +7,7 @@ public class AmbulanceTest {
 
 	@Test
 	public void constructorTest () {
-		Ambulance ambo = new Ambulance(1, 1, false);
+        var ambo = new Ambulance(1, 1, false);
 	}
 	
 	@Test
