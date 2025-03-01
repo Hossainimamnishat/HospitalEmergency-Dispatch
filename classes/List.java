@@ -180,23 +180,4 @@ public class List <T> implements I_List <T> {
 	}
 
 
-
-
-//	public Node<T> get(int index) {
-//		if(index < 0 || index > this.size - 1){
-//			return null;
-//		}
-//		Node<T> currentNode = this.head;
-//		for(int i = 0; i < index - 1; i++){
-//			currentNode = currentNode.getNext();
-//		}
-//		return currentNode  ;
-//	}
-//
-//	@Override
-//	public boolean swap(int indexOne, int indexTwo) {
-//
-//		return false;
-//	}
-
 }

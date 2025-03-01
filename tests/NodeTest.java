@@ -3,13 +3,12 @@ package tests;
 import classes.*;
 import org.junit.jupiter.api.Test;
 
-
 public class NodeTest {
 
 	@Test
 	public void constructorTest () {
 		Node<Integer> testNode = new Node<>(2);
-		Node<Integer> testNode2 = new Node<>();
+        var testNode2 = new Node<Integer>();
 	}
 	
 	@Test
