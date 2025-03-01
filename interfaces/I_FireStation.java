@@ -15,11 +15,15 @@ public interface I_FireStation {
 	public List<FireTruck> getFireTrucks();
 	
 	public void setFireTrucks(List<FireTruck> fireTrucks);
-	
-	public List<Ambulance> getAmbulances();
+
+	void setFireTrucks(java.util.List<FireTruck> fireTrucks);
+
+    public List<Ambulance> getAmbulances();
 	
 	public void setAmbulances(List<Ambulance> ambulances);
-	
+
+	void setAmbulances(java.util.List<Ambulance> ambulances);
+
 	public boolean addVehicle (FireTruck truck);
 	
 	public boolean addVehicle (FireTruckKinds truck);

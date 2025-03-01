@@ -7,4 +7,6 @@ public interface I_FireTruck {
 	public void setID(String ID);
 	public FireTruckKinds getKind();
 	public void setKind(FireTruckKinds kind);
+
+    String getType();
 }
