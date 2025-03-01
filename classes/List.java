@@ -143,7 +143,7 @@ public class List <T> implements I_List <T> {
 			return false;
 		}
 
-		// Handle case where indices are the same (nothing to do)
+
 		if (indexOne == indexTwo) {
 			return true;
 		}
