@@ -7,7 +7,7 @@ public class NodeTest {
 
 	@Test
 	public void constructorTest () {
-		Node<Integer> testNode = new Node<>(2);
+        var testNode = new Node<Integer>(2);
         var testNode2 = new Node<Integer>();
 	}
 	
