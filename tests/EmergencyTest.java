@@ -2,8 +2,6 @@ package tests;
 
 import org.junit.jupiter.api.Test;
 import classes.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class EmergencyTest {
 
 	@Test
