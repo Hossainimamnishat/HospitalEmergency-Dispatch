@@ -3,53 +3,66 @@ package classes;
 import interfaces.I_Emergency;
 
 public class Emergency implements I_Emergency {
+	private String location;
+	private EmergencyKinds kind;
+	private int patients;
+	private int patientsDoc;
+	public Emergency(String location, EmergencyKinds kind, int patients, int patientsDoc) {
+		this.location = location;
+		this.kind = kind;
+		this.patients = patients;
+		this.patientsDoc = patientsDoc;
+	}
 
 	@Override
 	public String getLocation() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.location;
 	}
 
 	@Override
 	public void setLocation(String location) {
-		// TODO Auto-generated method stub
-		
+		this.location = location;
+
 	}
 
 	@Override
 	public EmergencyKinds getKind() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return this.kind;
 	}
 
 	@Override
 	public void setKind(EmergencyKinds kind) {
-		// TODO Auto-generated method stub
-		
+		this.kind = kind;
+
 	}
 
 	@Override
 	public int getCasualties() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return this.patients;
 	}
 
 	@Override
 	public void setCasualties(int casualties) {
-		// TODO Auto-generated method stub
-		
+		this.patients = casualties;
+
 	}
 
 	@Override
 	public int getCasualtiesNeedsDoctor() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.patientsDoc;
 	}
 
 	@Override
 	public void setCasualtiesNeedsDoctor(int casualtiesNeedsDoctor) {
-		// TODO Auto-generated method stub
-		
+		this.patientsDoc = casualtiesNeedsDoctor;
+
 	}
+
+	public void addRespondingVehicle(FireTruck truck) {
+	}
+
+
 
 }
