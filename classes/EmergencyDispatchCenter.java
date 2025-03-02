@@ -92,7 +92,14 @@ public class EmergencyDispatchCenter implements I_EmergencyDispatchCenter {
 	}
 
 
+	/**
+	 * Dispatches the required number of available FireEngines for the given emergency.
 
+	 * @param emergency The emergency requiring fire truck dispatch.
+	 * @param engineCount Number of FireEngines needed.
+	 * @param additionalVehicles Additional fire truck types to be dispatched (handled elsewhere).
+	 * @return true if dispatching proceeds (completion check handled later).
+	 */
 	private boolean dispatchFireTrucks(Emergency emergency, int engineCount, FireTruckKinds... additionalVehicles) {
 		int dispatchedEngines = 0;
 		List<FireTruck> dispatchedVehicles = new List<>();
