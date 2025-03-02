@@ -162,8 +162,12 @@ public class List <T> implements I_List <T> {
 		Node<T> prevNodeTwo = get(indexTwo - 1);
 		Node<T> nodeTwo = prevNodeTwo.getNext();
 
-		// Swap nodes by adjusting pointers
-		if (prevNodeOne != null) {
+        try {
+            // Swap nodes by adjusting pointers
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        if (prevNodeOne != null) {
 			prevNodeOne.setNext(nodeTwo);
 		} else {
 			this.head = nodeTwo; // Update head if indexOne is 0
@@ -171,7 +175,7 @@ public class List <T> implements I_List <T> {
 
 		prevNodeTwo.setNext(nodeOne);
 
-		// Swap next pointers of nodeOne and nodeTwo
+        /* Swap next pointers of nodeOne and nodeTwo */
 		Node<T> tempNext = nodeOne.getNext();
 		nodeOne.setNext(nodeTwo.getNext());
 		nodeTwo.setNext(tempNext);
